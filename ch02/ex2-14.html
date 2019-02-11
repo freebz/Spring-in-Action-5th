@@ -1,0 +1,7 @@
+<!-- Listing 2.14  Displaying validation errors -->
+
+<label for="ccNumber">Credit Card #: </label>
+<input type="text" th:field="*{ccNumber}"/>
+<span class="validationError"
+      th:if="${#fields.hasErrors('ccNumber')}"
+      th:errors="*{ccNumber}">CC Num Error</span>
