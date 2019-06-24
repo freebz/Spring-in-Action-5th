@@ -1,0 +1,6 @@
+<!-- Aggregating multiple Hystrix streams -->
+
+<dependency>
+  <groupId>org.springframework.cloud</groupId>
+  <artifactId>spring-cloud-starter-netflix-turbin</artifactId>
+</dependency>
