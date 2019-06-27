@@ -1,0 +1,6 @@
+<!-- Registering Admin clients -->
+
+<dependency>
+  <groupId>de.codecentric</groudId>
+  <artifactId>spring-boot-admin-starter-client</artifactId>
+</dependency>

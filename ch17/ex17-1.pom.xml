@@ -1,0 +1,6 @@
+<!-- Creating an Admin server -->
+
+<dependency>
+  <groupId>de.codecentric</groudId>
+  <artifactId>spring-boot-admin-starter-server</artifactId>
+</dependency>
