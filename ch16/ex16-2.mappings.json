@@ -1,0 +1,50 @@
+// Listing 16.2  HTTP mappings as shown by the /mappings endpoint
+
+$ curl localhost:8081/actuator/mappings | jq
+{
+  "contexts": {
+    "application-1": {
+      "mappings": {
+	"dispatcherHandlers": {
+	  "webHandler": [
+
+	    {
+	      "predicate": "{[/ingredients],methods=[GET]}",
+	      "handler": "public
+     reactor.core.pubilisher.Flux<tacos.ingredients.Ingredient>
+     tacos.ingredients.IngredientsController.allIngredients()",
+	      "details": {
+		"handlerMethod": {
+		  "className": "tacos.ingredients.IngredientsController",
+		  "name": "allIngredients",
+		  "descriptor": "()Lreactor/core/publisher/Flux;"
+		},
+		"handlerFunction": null,
+		"requestMappingConditions": {
+		  "consumes": [],
+		  "headers": [],
+		  "methods": [
+		    "GET"
+		  ],
+		  "params": [],
+		  "patterns": [
+		    "/ingredients"
+		  ],
+		  "produces": []
+		}
+	      }
+	    },
+...
+	  ]
+	}
+      },
+      "parentId": "application-1"
+    },
+    "bootstrap": {
+      "mappings": {
+	"dispatcherHandlers": {}
+      },
+      "parentId": null
+    }
+  }
+}
